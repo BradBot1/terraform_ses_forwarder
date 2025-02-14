@@ -17,7 +17,7 @@ output "uid" {
   value       = random_string.uid.result
 }
 
-output "MX Record" {
+output "mx" {
   description = "The MX record required for this to work"
   value = "MX inbound-smtp.${var.region}.amazonaws.com. 10"
 }
